@@ -5,7 +5,7 @@ private class RemoteSiteHelperTest
 	private static void testCheckMetadataAPIConnection()
 	{			
     	// Metadata API web Service mock implementation for tests
-        Test.setMock(WebServiceMock.class, new WebServiceMockImpl());
+        System.Test.setMock(WebServiceMock.class, new WebServiceMockImpl());
 		
 		RemoteSiteHelperController controller = new RemoteSiteHelperController();
 		System.assertEquals(true, controller.MetadataConnectionWarning);		
